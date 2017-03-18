@@ -26,7 +26,7 @@ public class MainActivity extends TabActivity {
         TabSpec tabdua = tabHost.newTabSpec("Keterangan");
         // setting Title and Icon for the Tab
         tabdua.setIndicator("Keterangan");
-        Intent duaIntent = new Intent(this, MainDB.class);
+        Intent duaIntent = new Intent(this, TabTugas.class);
         tabdua.setContent(duaIntent);
 
         // Adding all TabSpec to TabHost

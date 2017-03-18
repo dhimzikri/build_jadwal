@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    tools:context=".DetailNegaraActivity" >
+    tools:context=".ListArray">
 
     <TextView
         android:id="@+id/nama_negara"

@@ -12,7 +12,8 @@ import android.util.Log;
 public class DB_helper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "DBtugas.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
+
     public DB_helper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         // TODO Auto-generated constructor stub
@@ -21,10 +22,10 @@ public class DB_helper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
-        String sql = "create table tugas(no integer primary key, nama_tugas text null, tgl date null, matkul text null);";
+        String sql = "create table tugas (no integer primary key, nama_tugas text null, tgl date null, matkul text null, deadline date null);";
         Log.d("Data", "onCreate: " + sql);
         db.execSQL(sql);
-        sql = "INSERT INTO tugas (no, nama_tugas, tgl, matkul) VALUES ('1001', 'Fathur', '1994-02-03', 'ARP');";
+        sql = "INSERT INTO tugas (no, nama_tugas, tgl, matkul, deadline) VALUES ('1001', 'Fathur', '1994-02-03', 'ARP', '1994-09-03');";
         db.execSQL(sql);
 
     }

@@ -3,8 +3,7 @@ package id.dhimz.root.myapplicat;
 /**
  * Created by root on 17/03/17.
  */
-import java.util.ArrayList;
-import java.util.HashMap;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,19 +15,19 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-public class TabJadwal extends Activity {
+import java.util.ArrayList;
+import java.util.HashMap;
 
-    // List view
-    private ListView lv;
+public class TabJadwal extends Activity {
 
     // Listview Adapter
     ArrayAdapter<String> adapter;
-
     // Search EditText
     EditText inputSearch;
-
     // ArrayList for Listview
     ArrayList<HashMap<String, String>> negaraList;
+    // List view
+    private ListView lv;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,7 +48,7 @@ public class TabJadwal extends Activity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String nama_negara = lv.getItemAtPosition(position).toString();
-                Intent intent = new Intent(getApplicationContext(), DetailNegaraActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ListArray.class);
                 intent.putExtra("nama_negara", nama_negara);
                 startActivity(intent);
 

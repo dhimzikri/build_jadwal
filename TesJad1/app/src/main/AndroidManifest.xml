@@ -14,12 +14,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailNegaraActivity"/>
-        <activity android:name=".MainDB"/>
-        <activity android:name=".BuatBio"/>
-        <activity android:name=".TabJadwal"/>
-        <activity android:name=".LihatBio" />
-        <activity android:name=".UpdateBio" />
+        <activity android:name=".ListArray" />
+        <activity android:name=".TabTugas" />
+        <activity android:name=".BuatTgs" />
+        <activity android:name=".TabJadwal" />
+        <activity android:name=".LihatTgs" />
+        <activity android:name=".UpdateTgs" />
     </application>
 
 </manifest>
