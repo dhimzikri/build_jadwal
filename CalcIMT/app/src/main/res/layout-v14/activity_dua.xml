@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pindah"
+        android:layout_below="@+id/pindah"
+        android:layout_marginTop="20dp"
+        android:text="Tentang"
+        android:textSize="25sp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/act"
+        android:layout_marginTop="20dp">
+    </FrameLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="KLASIFIKASI"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark">
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dibawah Normal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="18.5"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="140dp">
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.5-24.9"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="200dp" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelebihan Berat Badan"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25-29.9"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="76dp" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obesitas Tingkat 1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30–34,9"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="109dp" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obesitas Tingkat 2"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35–39.9"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="108dp" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obesitas Tingkat 3"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">40"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="128dp" >
+        </TextView>
+    </TableRow>
+</LinearLayout>

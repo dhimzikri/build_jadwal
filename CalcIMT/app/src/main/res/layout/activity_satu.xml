@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/txtTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edTinggi"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tinggi dalam satuan CM"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtBerat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edBerat"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Berat dalam satuan KG"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btHitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hitung" />
+
+        <Button
+            android:id="@+id/btHapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:onClick="hapus"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtKeterangan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtKeterangan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button
+        android:id="@+id/tombolexit"
+        android:onClick="keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tombolpesankeluar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Keluar" />
+
+</LinearLayout>
